@@ -36,3 +36,7 @@ The `./src` directory is where you will put all your code. This should be anythi
 ## .gitignore file
 
 This file is useful if you want to keep files local on your machine, but want to ignore them when using `git`. For example, if you have very large sequencing files you use for analysis and want them on your laptop, but do not want to upload them to GitHub (GitHub has a single file size limit of 150Mb anyway).
+
+## Getting started
+
+To use this repository for your work, fork this repository. There's a button on the top right for 'forking' this repository. In doing so, you will have a copy of this repository in your personal account which you can then work on. After forking, `git clone` your copy of the repository and edit the README, add your data and code!
