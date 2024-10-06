@@ -1,29 +1,37 @@
-# ARU undergraduate project template
+# Surveying Bycatch Incidents: UAE Dugong Conservation
 
-This is a template to get you started for your projects. Below is a description of the template:
+## Project Overview
+This project focuses on assessing bycatch incidents involving dugongs in the UAE. It aims to gather data on bycatch occurrences, analyse their impacts on dugong populations, and provide recommendations for effective conservation and management strategies.
 
-```text
--- undergraduate_template // this is the home directory for your project
-  |
-  -- README.md            // this file you are currently reading
-  -- /data                // data directory to store your data
-  -- /src                 // source code directory to put your code here
-  -- .gitignore           // a list of files for git to ignore
-```
+## Project Dependencies
+- R:  statistical analysis and data visualisation.
+- GIS Software:spatial analysis and mapping of bycatch incidents.
+- NVivo: Software used for qualitative data analysis, especially for coding and analysing interview data.
 
-## The README file
+## How to Run the Project
 
-Is a file which renders nicely on GitHub and tells the user (and your future selves) what you did. Include details like:
+To streamline the execution of analysis, create a master script. This script will automate the process by running all necessary scripts and commands in sequence when executed.
 
-- Title of your project (replace the "ARU undergraduate project template" at the top)
-- What your project is about
-- What your project depends on (e.g. python3, bioinformatic software etc.)
-- How to run your project
-  - I like to set up a 'master script' which will run everything when you execute that command
-  - Some options include:
-    - Running a python script (e.g. `python3 ./src/main.py`)
-    - Running a BASH script (e.g. `bash ./src/main.bash`)
-    - Telling the user which script to run when (a descriptive version of the pipeline)
+#1. Setting Up the Master Script:
+   - Create an R script (e.g., `master_script.R`) that calls all the analysis scripts in the desired order.
+   - Example structure of the master script:
+     ```R
+     source("data_preparation.R")
+     source("statistical_analysis.R")
+     source("visualization.R")
+     ```
+   - Ensure that each script is properly configured and tested.
+
+#2. Run the Master Script:
+   - Open R and execute the master script:
+     ```R
+     source("path/to/your/master_script.R")
+     ```
+
+#3. Use GIS Software and NVivo:
+   - After running the master script, use GIS software for spatial analysis and mapping as required.
+   - Open NVivo to conduct qualitative analysis on interview data.
+
 
 ## The data directory
 
@@ -40,3 +48,6 @@ This file is useful if you want to keep files local on your machine, but want to
 ## Getting started
 
 To use this repository for your work, fork this repository. There's a button on the top right for 'forking' this repository. In doing so, you will have a copy of this repository in your personal account which you can then work on. After forking, `git clone` your copy of the repository and edit the README, add your data and code!
+
+
+
