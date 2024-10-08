@@ -6,7 +6,6 @@ This project focuses on assessing bycatch incidents involving dugongs in the UAE
 ## Project Dependencies
 - R:  statistical analysis and data visualisation.
 - GIS Software:spatial analysis and mapping of bycatch incidents.
-- NVivo: Software used for qualitative data analysis, especially for coding and analysing interview data.
 
 ## How to Run the Project
 
